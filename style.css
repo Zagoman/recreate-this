@@ -88,11 +88,11 @@ li span {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   margin-inline: auto;
   /* padding-bottom: 1rem; */
   font-weight: var(--fw-600);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .option {
   padding: 0.3em 1em;
@@ -104,7 +104,7 @@ li span {
 }
 .clock {
   font-weight: var(--fw-700);
-  font-size: 7rem;
+  font-size: 6rem;
   padding: 1rem 0;
   text-align: center;
 }
@@ -128,6 +128,7 @@ button {
   transform: translateY(4px);
   box-shadow: 0px 0px 0px var(--color-white-20);
 }
+/* *Tasks* */
 @media only screen and (min-width: 600px) {
   /* *Header* */
   header {
@@ -148,6 +149,7 @@ button {
   /* *timer* */
   .options {
     width: 70%;
+    max-width: 400px;
     font-size: 1rem;
   }
   .option:active {
@@ -156,4 +158,5 @@ button {
   .clock {
     font-size: 9.5rem;
   }
+  /* *Tasks* */
 }
