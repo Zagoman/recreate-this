@@ -38,6 +38,7 @@ ul {
   text-decoration: none;
 }
 /* *Header* */
+
 header {
   width: 80%;
   max-width: 1200px;
@@ -62,16 +63,32 @@ header li a {
   align-items: center;
   gap: 0.5rem;
   font-weight: var(--fw-500);
-  color: var(--color-white-0);
+  font-size: 0.9rem;
+  color: var(--color-white-90);
   background-color: var(--color-white-20);
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 5px;
+}
+header li a:hover {
+  color: var(--color-white-0);
 }
 li span {
   display: none;
 }
+/* *timer* */
 @media only screen and (min-width: 600px) {
+  /* *Header* */
   li span {
     display: inline;
   }
+  header li a {
+    padding: 0.3rem 1rem;
+  }
+  header li a:hover {
+    color: var(--color-white-0);
+  }
+  header li a:active {
+    transform: translateY(3px);
+  }
+  /* *timer* */
 }
