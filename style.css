@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/fvz8alh.css");
+:root {
+  --color-red-0: #d9564f;
+  --color-red-100: #de6761;
+  --color-red-200: #f99f9a;
+  --color-red-300: #e7a7a4;
+  --color-brown-0: #531d20;
+  --color-white-0: #fbeeed;
+  --color-white-100: #fff;
+
+  --ff: omnes-pro, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: var(--ff);
+}
+#red-bg {
+  background-color: var(--color-red-0);
+  color: var(--color-white-100);
+}
+#red-bg a {
+  color: var(--color-white-100);
+  text-decoration: none;
+}
