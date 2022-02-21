@@ -32,6 +32,7 @@ ul {
   background-color: var(--color-red-0);
   color: var(--color-white-100);
   min-height: 100vh;
+  padding-inline: 1rem;
 }
 #red-bg a {
   color: var(--color-white-100);
@@ -40,7 +41,7 @@ ul {
 /* *Header* */
 
 header {
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
   margin-inline: auto;
   padding-block: 1rem;
@@ -78,6 +79,9 @@ li span {
 /* *timer* */
 @media only screen and (min-width: 600px) {
   /* *Header* */
+  header {
+    width: 90%;
+  }
   li span {
     display: inline;
   }
