@@ -1,15 +1,22 @@
 @import url("https://use.typekit.net/fvz8alh.css");
 :root {
   --color-red-0: #d9564f;
-  --color-red-100: #de6761;
-  --color-red-200: #f99f9a;
-  --color-red-300: #e7a7a4;
-  --color-brown-0: #531d20;
-  --color-white-0: #fbeeed;
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-90: rgba(255, 255, 255, 0.9);
   --color-white-100: #fff;
+  --color-brown-0: #531d20;
+  --color-brown-100: #b54843;
 
   --ff: omnes-pro, -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
 }
 * {
   box-sizing: border-box;
@@ -18,11 +25,53 @@
 body {
   font-family: var(--ff);
 }
+ul {
+  list-style: none;
+}
 #red-bg {
   background-color: var(--color-red-0);
   color: var(--color-white-100);
+  min-height: 100vh;
 }
 #red-bg a {
   color: var(--color-white-100);
   text-decoration: none;
+}
+/* *Header* */
+header {
+  width: 80%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--color-brown-100);
+}
+header nav {
+  display: flex;
+}
+.logo {
+  margin-right: auto;
+  font-weight: var(--fw-600);
+  font-size: 1.4rem;
+}
+header ul {
+  display: flex;
+  gap: 0.5rem;
+}
+header li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: var(--fw-500);
+  color: var(--color-white-0);
+  background-color: var(--color-white-20);
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+}
+li span {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  li span {
+    display: inline;
+  }
 }
