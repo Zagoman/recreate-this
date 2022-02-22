@@ -219,6 +219,23 @@ button {
   color: var(--color-black-600);
   cursor: pointer;
 }
+.add-trigger {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-brown-100);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 2px dashed var(--color-white-30);
+  color: var(--color-white-80);
+  cursor: pointer;
+}
+.add-trigger:hover {
+  background-color: var(--color-brown-0);
+  color: var(--color-white-100);
+}
 
 @media only screen and (min-width: 600px) {
   /* *Header* */
