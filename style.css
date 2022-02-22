@@ -44,6 +44,7 @@ ul {
   color: var(--color-white-100);
   min-height: 100vh;
   padding-inline: 1rem;
+  padding-bottom: 4rem;
 }
 #red-bg a {
   /* color: var(--color-white-100); */
@@ -229,14 +230,28 @@ button {
   padding: 1.5rem;
   border-radius: 5px;
   border: 2px dashed var(--color-white-30);
-  color: var(--color-white-80);
+  opacity: 0.8;
   cursor: pointer;
 }
 .add-trigger:hover {
-  background-color: var(--color-brown-0);
+  opacity: 1;
+}
+.info ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--color-white-10);
+  box-shadow: 0px -2px var(--color-white-100);
+  margin-top: 1rem;
+  color: var(--color-white-80);
+  font-size: 1.2rem;
+}
+.info span {
+  font-size: 1.5em;
+  padding-left: 0.2rem;
   color: var(--color-white-100);
 }
-
 @media only screen and (min-width: 600px) {
   /* *Header* */
   header {
