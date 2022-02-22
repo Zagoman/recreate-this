@@ -319,6 +319,42 @@ main ul li::before {
   border-radius: 50%;
   background-color: var(--color-red-0);
 }
+/* *Footer* */
+footer {
+  padding-block: 2rem;
+}
+footer,
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+footer ul {
+  display: flex;
+  gap: 0.5rem;
+}
+footer a {
+  color: var(--color-red-0);
+  font-weight: var(--fw-700);
+  text-decoration: none;
+}
+footer ul a {
+  color: var(--color-black-400);
+}
+footer p {
+  text-align: center;
+  max-width: 30ch;
+  font-weight: var(--fw-600);
+  font-size: 1rem;
+  color: var(--color-black-400);
+}
+small {
+  font-weight: var(--fw-500);
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
 @media only screen and (min-width: 600px) {
   /* *Header* */
   header {
@@ -366,6 +402,10 @@ main ul li::before {
     width: 100%;
   }
   main a:hover {
+    color: var(--color-brown-100);
+  }
+  /* *footer* */
+  footer a:hover {
     color: var(--color-brown-100);
   }
 }
