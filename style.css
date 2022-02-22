@@ -97,6 +97,13 @@ header li span {
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
+.pomodoro-number {
+  opacity: 0.8;
+}
+.current-task,
+.pomodoro-number {
+  font-weight: var(--fw-600);
+}
 .options {
   display: flex;
   justify-content: space-between;
