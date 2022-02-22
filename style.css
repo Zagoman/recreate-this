@@ -54,7 +54,7 @@ ul {
 
 header {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   margin-inline: auto;
   padding-block: 1rem;
   border-bottom: 1px solid var(--color-brown-100);
@@ -252,6 +252,73 @@ button {
   padding-left: 0.2rem;
   color: var(--color-white-100);
 }
+/* *Article* */
+main {
+  padding: 2rem 1rem;
+  color: var(--color-brown-0);
+}
+article {
+  width: 90%;
+  max-width: 800px;
+  margin-inline: auto;
+}
+main h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--color-brown-0);
+}
+main h2 {
+  color: var(--color-brown-0);
+  margin-bottom: 1.1rem;
+}
+main h1::after,
+main h2::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: var(--color-red-0);
+  opacity: 0.6;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+main p {
+  max-width: 62ch;
+}
+main a {
+  color: var(--color-red-0);
+  text-decoration: none;
+  font-weight: var(--fw-700);
+}
+main p,
+main ul,
+main ol {
+  margin-bottom: 2rem;
+  font-weight: var(--fw-500);
+  opacity: 0.9;
+  line-height: 1.4;
+}
+main ol,
+main ul {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main ul li {
+  position: relative;
+}
+
+main ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0.6rem auto auto -1.3rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-red-0);
+}
 @media only screen and (min-width: 600px) {
   /* *Header* */
   header {
@@ -293,5 +360,12 @@ button {
   }
   .task__settings:hover {
     background-color: var(--color-black-800);
+  }
+  /* *Article* */
+  article {
+    width: 100%;
+  }
+  main a:hover {
+    color: var(--color-brown-100);
   }
 }
